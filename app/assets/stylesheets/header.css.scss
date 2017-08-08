@@ -1,0 +1,13 @@
+header.jumbotron {
+  height: 150px;
+  background-image: image-url('chain-232930.jpg');
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+  align-items: center; /* 縦方向中央揃え */
+  -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+  justify-content: center; /* 横方向中央揃え */
+}
