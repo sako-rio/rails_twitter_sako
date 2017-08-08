@@ -1,0 +1,7 @@
+- if @tweets.present?
+  %h2 検索結果
+  %ul
+    - @tweets.each_with_index do |tweet, i|
+      .list
+        %li
+          Tweet#{i}: #{tweet.contents}
