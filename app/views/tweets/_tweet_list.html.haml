@@ -1,7 +1,7 @@
 - if @tweets.present?
   %h2 検索結果
-  %ul
+  %ul.list-group
     - @tweets.each_with_index do |tweet, i|
       .list
-        %li
+        %li.list-group-item
           Tweet#{i}: #{tweet.contents}
