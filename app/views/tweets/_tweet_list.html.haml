@@ -1,5 +1,7 @@
 - if @tweets.present?
   .row
+    .col-xs-12.text-center
+      = paginate @tweets, window: 2
     .col-xs-offset-1
       %h2 検索結果
     .col-xs-10.col-xs-offset-1
