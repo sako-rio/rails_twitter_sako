@@ -8,3 +8,5 @@
           .list
             %li.list-group-item
               Tweet#{i}: #{tweet.contents}
+    .col-xs-12.text-center
+      = paginate @tweets, window: 2

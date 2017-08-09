@@ -10,14 +10,15 @@ class TweetsController < ApplicationController
 
     # 検索ワードが存在していたらツイートを取得
     if params[:keyword].present?
-      tweets = client.search(params[:keyword], count: 10, result_type: "recent",
+      tweets = client.search(params[:keyword], count: 100, result_type: "recent",
         exclude: "retweets", since_id: since_id)
 
       # 取得したツイートをモデルに渡す
-      tweets.take(10).each do |tw|
+      tweets.take(100).each do |tw|
         tweet = Tweet.new(tw.full_text)
         @tweets << tweet
       end
     end
+    @tweets = Kaminari.paginate_array(@tweets).page(params[:page])
   end
 end
