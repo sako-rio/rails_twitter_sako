@@ -1,8 +1,17 @@
+$background_color: #33FFFF;
+$text_color: #fff;
+
 header.jumbotron {
   height: 150px;
   background-image: image-url('logo.png');
   background-position: center center;
   background-size: auto 100%;
-  color: #fff;
-  background-color: #33FFFF;
+  color: $text_color;
+  background-color: $background_color;
+}
+
+footer {
+  height: 50px;
+  color: $text_color;
+  background-color: $background_color;
 }
