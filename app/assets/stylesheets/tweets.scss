@@ -2,6 +2,10 @@ body {
   background-color: #CCCCCC;
 }
 
-.tweet-contents{
+.tweet-contents {
   font-size: 150%;
+  > .list {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
