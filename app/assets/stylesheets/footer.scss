@@ -1,10 +1,7 @@
 @import "shared/color_scheme";
 
-header.jumbotron {
-  height: 150px;
-  background-image: image-url('logo.png');
-  background-position: center center;
-  background-size: auto 100%;
+footer {
+  height: 50px;
   color: $text_color;
   background-color: $background_color;
   display: flex;
