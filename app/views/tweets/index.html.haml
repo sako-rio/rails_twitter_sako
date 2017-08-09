@@ -1,6 +1,9 @@
 .content
   .row
-    .col-xs-4.col-xs-offset-4
+    .col-xs-offset-5
+      = video_tag 'twitter.mp4',
+        autoplay: true, loop: true, autobuffer: true, height: '100PX'
+    .col-xs-offset-5
       #search-box
         = form_tag('/tweets/search', method: :get) do
           = text_field_tag :tweet, nil, id: 'tweet_search', name: 'keyword',
