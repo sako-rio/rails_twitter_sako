@@ -1,5 +1,6 @@
 .content
   .row
+    = raise "#{current_user}"
     .col-xs-offset-5
       = video_tag 'twitter.mp4',
         autoplay: true, loop: true, autobuffer: true, height: '100PX'

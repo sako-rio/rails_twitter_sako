@@ -11,9 +11,7 @@ class User < ActiveRecord::Base
                          email: auth.info.email,
                          provider: auth.provider,
                          uid:      auth.uid,
-                         token:    auth.credentials.token,
-                         password: Devise.friendly_token[0, 20],
-                         meta:     auth.to_yaml)
+                         token:    auth.credentials.token)
     end
     user
   end
