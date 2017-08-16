@@ -1,16 +1,21 @@
 body {
   background-color: #CCCCCC;
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-}
 
-.tweet-contents {
-  font-size: 150%;
-  > .list {
-    margin-top: 5px;
-    margin-bottom: 5px;
+  .tweet-contents {
+    font-size: 150%;
+    > .list {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
   }
-}
 
-.login-user-name {
-  font-size: 300%;
+  .login-user-name {
+    font-size: 300%;
+  }
+
+  .link-to-signin {
+    margin: 30px;
+    font-size: 250%;
+  }
 }
