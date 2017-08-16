@@ -12,6 +12,10 @@
   %body
     %header.jumbotron
       .container
+        - if user_signed_in?
+          .row
+            .col-xs-12.text-right
+              = link_to 'Sign out', users_sign_out_path, class: 'link-to-login btn btn-warning'
         .text-center
           %h1 Rails Twitter
     = yield

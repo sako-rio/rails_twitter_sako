@@ -10,4 +10,9 @@ header.jumbotron {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .link-to-login {
+    color: $text_color;
+    font-size: 200%;
+  }
 }
