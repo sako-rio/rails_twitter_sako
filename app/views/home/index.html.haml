@@ -1,1 +1,4 @@
 = link_to 'Signin with Google', user_google_omniauth_authorize_path
+- if user_signed_in?
+  = link_to 'Sign out', users_sign_out_path
+  okkok

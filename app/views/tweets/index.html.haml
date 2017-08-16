@@ -1,9 +1,10 @@
 .content
   .row
-    = raise "#{current_user}"
+    .col-xs-12.text-center.login-user-name
+      -# ようこそ #{current_user.name} さん
     .col-xs-offset-5
       = video_tag 'twitter.mp4',
-        autoplay: true, loop: true, autobuffer: true, height: '100PX'
+        autoplay: true, loop: true, autobuffer: true, width: '200PX'
     .col-xs-offset-5
       #search-box
         = form_tag('/tweets/search', method: :get) do
