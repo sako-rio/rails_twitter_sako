@@ -1,3 +1,9 @@
+html {
+  position: relative;
+  min-height: 100%;
+  min-width: 100%;
+}
+
 body {
   background-color: #CCCCCC;
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
@@ -12,10 +18,5 @@ body {
 
   .login-user-name {
     font-size: 300%;
-  }
-
-  .link-to-signin {
-    margin: 30px;
-    font-size: 250%;
   }
 }
