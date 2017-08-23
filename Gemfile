@@ -56,6 +56,10 @@ gem 'geocoder'
 
 gem 'annotate', require: false
 
+# create ER図
+# rake erd
+gem 'rails-erd'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
